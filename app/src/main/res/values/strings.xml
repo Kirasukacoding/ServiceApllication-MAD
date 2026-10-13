@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ServiceApplication</string>
+    <string name="title_main">Music Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="status_running">Status: Running</string>
+    <string name="status_stopped">Status: Stopped</string>
+    <string name="nav_select_track">Select Track</string>
+    <string name="nav_about">About</string>
+    <string name="back">Back</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="track_1">Track 1</string>
+    <string name="track_2">Track 2</string>
+    <string name="track_3">Track 3</string>
+</resources>

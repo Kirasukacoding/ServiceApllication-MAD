@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background_light">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Track"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Track Selection Card (Single choice only) -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/border_color"
+        android:layout_marginBottom="24dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroupTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <RadioButton
+                android:id="@+id/rbTrack1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Track 1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:checked="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color" />
+
+            <RadioButton
+                android:id="@+id/rbTrack2"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Track 2"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color" />
+
+            <RadioButton
+                android:id="@+id/rbTrack3"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Track 3"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Actions -->
+    <Button
+        android:id="@+id/btnPlaySelected"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Play"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnStopTrack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Stop"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/accent_red"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Navigation -->
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Back to Main"
+        android:textSize="15sp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:textColor="@color/primary"
+        app:strokeColor="@color/primary" />
+
+</LinearLayout>
